@@ -1,0 +1,73 @@
+.info{
+    width:90%;
+    margin:auto;
+}
+
+#map{
+    margin-top:30px;
+    height:300px;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 5px 10px; 
+}
+
+.about .card{
+    margin-top: 20px;
+    border-radius:10px;
+    box-shadow: 0px 5px 10px; 
+}
+
+.about .card-body a{
+    padding:10px;
+    margin:auto;
+}
+
+.card-text{
+    font-size: 80%;
+    margin-bottom: 0px;
+}
+
+.about-links{
+    padding:10px;
+    text-align: center;
+}
+
+.about-links a{
+    color:rgb(241, 101, 36);
+}
+
+.about-links a i{
+    font-size: 18px;
+}
+
+.about-links a i:hover{
+    font-weight: bolder;
+}
+
+.more{
+    background-color:rgb(241, 101, 36);
+    color: #fff;
+    margin-top: 10px;
+}
+
+.more:hover{
+    background-color:rgb(207, 104, 56);
+    color: #fff;
+}
+
+.modal .about-links i{
+    padding: 0px 20px;
+}
+
+
+@media only screen and (max-width:850px){
+    #map{
+        height:350px;
+    }
+}
+
+@media only screen and (max-width:800px){
+    #mapId{
+        margin-bottom: 50px;
+    }
+}

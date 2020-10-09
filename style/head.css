@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{
+    margin:0;
+}
+
+p{
+    font-size: 14px;
+    color: #333;
+}
+
+h5{
+    color: #333;
+}
+
+
+.header{
+    background-color: #fff;
+    color:rgb(241, 101, 36);
+    padding:10px;
+    top:0px;
+    width:100%;
+    box-shadow: 0px 5px 10px;
+}
+
+
+.header .brand{
+    font-family: 'Permanent Marker', cursive;
+    color:rgb(238, 116, 59);;
+    text-decoration: none;
+}
+
+.header .dropdown i{
+    margin-top:10px;
+    font-size: 18px;
+}
+
+.social{
+    background-color: rgb(59, 57, 57);
+    top:61px;
+    width:4%;
+}
+
+.social ul{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.social li{
+    list-style: none;
+    padding:10px 0px;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    /* border-bottom: 1px solid rgb(216, 207, 207); */
+}
+
+.social a{
+    color: #fff;
+}
+
+.social a:hover{
+    color: rgb(238, 116, 59);
+}
+
+.jumbotron{
+    height:350px;
+    padding:0px;
+    background-image: url("images/bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    box-shadow:0px 5px 10px;
+}
+
+.opacity{
+    height:350px;
+    /* padding: 120px; */
+    background-color:rgba(0,0,0,0.4);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.dropdown-menu{
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width:860px){
+    .social{
+        width:5%;
+    }
+
+    .social li{
+        padding:10px 5px;
+    }
+
+    .social ul{
+        padding-right:5px;
+    }
+}
+
+@media only screen and (max-width:765px){
+    .social{
+        width:6%;
+    }
+
+    .social li{
+        padding:10px 15px;
+    }
+
+    .social ul{
+        /* padding-right:5px; */
+    }
+}
+
+@media only screen and (max-width:715px){
+    .social li{
+        padding:10px 15px;
+    }
+
+    .social ul{
+        /* padding-right:5px; */
+    }
+}
+
+@media only screen and (max-width:650px){
+    .jumbotron h3{
+        font-size: 1.60rem;
+    }
+
+    .jumbotron, .opacity{
+        height:330px;
+    }
+
+    .social{
+        width:6.5%;
+        top:61.5px;
+    }
+
+    .social li{
+        padding:7px 10px;
+    }
+
+    .social ul{
+        /* padding-right:5px; */
+    }
+}
+
+@media only screen and (max-width:600px){
+    .header-container{
+        width: 100%;
+        padding-left:5px;
+        padding-right:5px;
+    }
+
+    .jumbotron h3{
+        font-size: 1.50rem;
+    }
+
+    .jumbotron .container{
+        width: 100%;
+        /* margin: 0px; */
+    }
+
+    .jumbotron, .opacity{
+        height:320px;
+    }
+
+    .social{
+        width:7%;
+    }
+
+    .social li{
+        /* padding:10px 10px; */
+    }
+}
+
+@media only screen and (max-width:550px){
+    .social{
+        width:8%;
+    }
+
+    .social li{
+        padding:5px 10px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .header .brand h3{
+        font-size: 1.55rem;
+    }
+
+    .jumbotron h3{
+        font-size: 1.30rem;
+    }
+
+    .jumbotron, .opacity{
+        height:310px;
+    }
+
+    .header .dropdown i{
+        font-size: 17px;
+    }
+
+    .social{
+        width:8.5%;
+        top:57.5px;
+    }
+
+    .social li{
+        /* padding:10px 10px; */
+    }
+}
+
+@media only screen and (max-width:430px){
+    .header .brand h3{
+        font-size: 1.50rem;
+    }
+
+    .social{
+        width:9%;
+        top:57px;
+    }
+
+    .social li{
+        /* padding:10px 10px; */
+    }
+}
+
+@media only screen and (max-width:400px){
+    .jumbotron h3{
+        font-size: 1.20rem;
+    }
+    
+    .jumbotron, .opacity{
+        height:300px;
+    }        
+}
+
+
+@media only screen and (max-width:380px){
+    .social{
+        width:10%;
+    }
+
+    .social li{
+        padding:4px 8px;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .header .brand h3{
+        font-size: 1.45rem;
+    }
+
+    .social{
+        width:11%;
+        top:55px;
+    }
+
+    .social li{
+        /* padding:10px 10px; */
+    }
+}
+
+@media only screen and (max-width:320px){
+    .social{
+        width:12%;
+    }
+
+    .social li{
+        /* padding:10px 10px; */
+    }
+}
+
+

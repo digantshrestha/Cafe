@@ -1,0 +1,14 @@
+.addItems{
+    background-color: rgb(195, 231, 231);
+    padding: 20px;
+}
+
+.add-form{
+    margin: auto;
+    width:100%;
+}
+
+.add-form input{
+    margin: auto;
+    /* width:70%; */
+}

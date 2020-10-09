@@ -1,0 +1,10 @@
+.item-image{
+    /* padding:50px; */
+    text-align: center;
+    height:40%;
+    width:40%;
+    margin:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

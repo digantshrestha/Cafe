@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo 'Cafe'; ?></title>
-</head>
-<body>
-    <?php echo "Hello World";?>
-</body>
-</html>
+<?php
+  include_once("db/db.php");
+?>
+
+
+  <?php include("globalTemplates/header.php"); ?>
+  <?php include("globalTemplates/socialMedia.php"); ?>
+
+  <?php include("templates/jumbotron.php"); ?>
+  <?php include("templates/menu.php"); ?>
+
+  <?php include("templates/info.php"); ?>
+
+  <?php include("templates/contact.php"); ?>
+
+  <?php include("globalTemplates/footer.php"); ?>
+
+  
+
+  
+
+
+  

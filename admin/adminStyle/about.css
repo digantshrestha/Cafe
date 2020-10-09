@@ -1,0 +1,11 @@
+.about textarea {
+    height: 150px;
+    padding: 10px;
+    font-size: 80%;
+}
+
+.about .btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
