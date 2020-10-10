@@ -13,7 +13,7 @@
         
     ?>
         <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVzTaQzz2AA1l4TB_LGoe1O7RP3OdgY34&callback=initMap"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=<?php echo $data['api_key']; ?>&callback=initMap"></script>
 
         <script>
                 function initMap() {
