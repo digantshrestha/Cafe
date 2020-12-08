@@ -2,7 +2,7 @@
 window.addEventListener('load', function () {
     new Glider(document.querySelector('.glider'), {
         slidesToShow: 3,
-        slidesToScroll: 2,
+        slidesToScroll: 3,
         draggable: true,
         dots: '.dots',
         rewind: true,
@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
                 breakpoint: 765,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 2
+                    slidesToScroll: 3
                 }
             },
             {
@@ -81,30 +81,30 @@ window.addEventListener('load', function () {
 });
 
 
-function sliderAuto(slider, miliseconds) {
-    const slidesCount = slider.track.childElementCount;
-    let slideTimeout = null;
-    let nextIndex = 1;
+// function sliderAuto(slider, miliseconds) {
+//     const slidesCount = slider.track.childElementCount;
+//     let slideTimeout = null;
+//     let nextIndex = 1;
 
-    function slide() {
-        slideTimeout = setTimeout(
-            function () {
-                if (nextIndex >= slidesCount) {
-                    nextIndex = 0;
-                }
-                slider.scrollItem(nextIndex++);
-            },
-            miliseconds
-        );
-    }
+//     function slide() {
+//         slideTimeout = setTimeout(
+//             function () {
+//                 if (nextIndex >= slidesCount) {
+//                     nextIndex = 0;
+//                 }
+//                 slider.scrollItem(nextIndex++);
+//             },
+//             miliseconds
+//         );
+//     }
 
-    slider.ele.addEventListener('glider-animated', function () {
-        window.clearInterval(slideTimeout);
-        slide();
-    });
+//     slider.ele.addEventListener('glider-animated', function () {
+//         window.clearInterval(slideTimeout);
+//         slide();
+//     });
 
-    slide();
-}
+//     slide();
+// }
 
 
 
