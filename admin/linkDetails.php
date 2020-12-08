@@ -20,7 +20,7 @@ session_start();
         }
 ?>
 <?php include("adminGlobal/seperateHeader.php");?>
-<body>
+
     <header class="header">
         <div class="container">
             <a href="admin.php">Home</a>

@@ -8,8 +8,9 @@
   <title>Admin | <?php echo $brandName['brandname'];?></title>
   <style>
     <?php include("adminStyle/header.css"); ?>
-    <?php //include("adminStyle/linkDetails.css"); ?>
+    <?php include("adminStyle/stats.css"); ?>
     <?php include("adminStyle/add.css"); ?>
     <?php include("adminStyle/details.css"); ?>
   </style>
 </head>
+<body>

@@ -101,7 +101,7 @@
 ?>
 
         <?php include("adminGlobal/seperateHeader.php");?>
-        <body>
+        
         <header class="container">
             <a href="edit.php">Back</a>
             <a href="admin.php">Admin Page</a>

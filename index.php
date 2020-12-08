@@ -11,7 +11,7 @@
 
   <?php include("templates/info.php"); ?>
 
-  <?php include("templates/contact.php"); ?>
+  <?php //include("templates/contact.php"); ?>
 
   <?php include("globalTemplates/footer.php"); ?>
 

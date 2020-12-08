@@ -5,6 +5,7 @@
         private $db;
         private $query, $stmt, $items, $item;
         private $name, $price, $quantity, $imagePath, $imageName, $availableData;
+        private $fname, $lname, $phone, $msg;
 
         public function __construct(){}
 
@@ -49,6 +50,23 @@
                 $this->imagePath,
                 $this->imageName,
                 $this->availableData
+            ];
+            return $params;
+        }
+
+        public function setMsgData($fname, $lname, $phone, $msg){
+            $this->fname = $fname;
+            $this->lname = $lname;
+            $this->phone = $phone;
+            $this->msg = $msg;
+        }
+
+        public function getMsgData(){
+            $params = [
+                $this->fname,
+                $this->lname,
+                $this->phone,
+                $this->msg
             ];
             return $params;
         }
@@ -171,6 +189,23 @@
 
             // $stmt = $this->connection()->prepare($this->getQuery());
             // $stmt->execute([$data1, $data2, $data3, $id]);
+        }
+
+        public function insertMsg(){
+            pg_prepare($this->connection(), 'crud-query', $this->getQuery());
+            pg_execute($this->connection(), 'crud-query', $this->getMsgData());
+        }
+
+        public function getMsgs(){
+            $stmt = pg_query($this->connection(), $this->getQuery());
+            $result = pg_fetch_all($stmt);
+            return $result;
+        }
+
+        public function getMsgCount(){
+            $stmt = pg_query($this->connection(), 'SELECT * FROM contact');
+            $result = pg_num_rows($stmt);
+            return $result;
         }
     
     }

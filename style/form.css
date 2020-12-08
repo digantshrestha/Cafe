@@ -13,13 +13,21 @@
 }
 
 .contact-form .input{
-    outline:none;
     width:100%;
     margin:auto;
     /* padding:5px; */
-    border:none;
+    /* border:none;
     border-bottom: 1px solid rgb(197, 193, 193);
-    height:40px;
+    height:40px; */
+}
+
+.form-group{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.req{
+    color: red;
 }
 
 @media only screen and (max-width:800px){

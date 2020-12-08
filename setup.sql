@@ -100,12 +100,11 @@ create table map(
 
 
 create table contact(
-    id int primary key auto_increment not null,
-    email varchar(30) not null
-);
-
-create table contact(
     id serial primary key not null,
-    email varchar(30) not null
+    first_name varchar(15),
+    last_name varchar(15),
+    contact_no varchar(20) not null,
+    message text not null,
+    status boolean default 'false'
 );
 
