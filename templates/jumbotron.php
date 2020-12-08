@@ -13,7 +13,7 @@
               </div>
           </section>
 
-          <section class="jumbotron" style="background-image: url('images/bakeryProfile.jpeg');">
+          <!-- <section class="jumbotron" style="background-image: url('images/bakeryProfile.jpeg');">
               <div class="opacity">
                 <div class="container">
                   <h3><?php echo $brandName['quote']; ?></h3>
@@ -27,7 +27,7 @@
                   <h3><?php echo $brandName['quote']; ?></h3>
                 </div>
               </div>
-          </section>
+          </section> -->
 
         </ul>
 
