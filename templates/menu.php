@@ -43,7 +43,7 @@
     <div class="glider-contain">
 
       <button class="glider-prev"><i class="fa fa-chevron-left"></i></button>
-        <ul class="glider items">
+        <ul class="glider3 items">
 
           <?php foreach($items as $item): ?>
             

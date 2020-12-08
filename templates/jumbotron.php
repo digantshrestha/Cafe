@@ -31,17 +31,5 @@
 
         </ul>
 
-      <!-- <button class="glider-next"><i class="fa fa-chevron-right"></i></button>
-
-      <div role="tablist" class="dots"></div> -->
-
 
     </div>
-
-<!-- <section class="jumbotron">
-    <div class="opacity">
-      <div class="container">
-        <h3><?php echo $brandName['quote']; ?></h3>
-      </div>
-    </div>
-</section> -->

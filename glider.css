@@ -142,6 +142,35 @@
     height: 0;
   }
 
+  .glider3 {
+    margin: 0 auto;
+    position: relative;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    transform: translateZ(0);
+  }
+
+  .glider3.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .glide3r.draggable .glider-slide img {
+    user-select: none;
+    pointer-events: none;
+  }
+  .glider3.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+
+  .glider3::-webkit-scrollbar {
+    opacity: 0;
+    height: 0;
+  }
+
+
   @media(max-width: 36em){
     .glider::-webkit-scrollbar {
       opacity: 1;
@@ -163,6 +192,19 @@
       height: 3px;
     }
     .glider2::-webkit-scrollbar-thumb {
+      opacity: 1;
+      border-radius: 99px;
+      background-color: rgba(156, 156, 156, 0.25);
+      box-shadow: 0 0 1px rgba(255,255,255,.25);
+    }
+
+    .glider3::-webkit-scrollbar {
+      opacity: 1;
+      -webkit-appearance: none;
+      width: 7px;
+      height: 3px;
+    }
+    .glider3::-webkit-scrollbar-thumb {
       opacity: 1;
       border-radius: 99px;
       background-color: rgba(156, 156, 156, 0.25);
