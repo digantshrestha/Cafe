@@ -46,7 +46,77 @@ window.addEventListener('load', function () {
             }
         ]
     });
-});    
+
+    new Glider(document.querySelector('.glider3'), {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        rewind: true,
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+        responsive: [
+            {
+                breakpoint: 765,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 590,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 315,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+
+    sliderAuto(new Glider(document.querySelector('.glider2'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        rewind: true
+        // dots: '.dots'
+    }), 3000);
+
+});
+
+
+function sliderAuto(slider, miliseconds) {
+    const slidesCount = slider.track.childElementCount;
+    let slideTimeout = null;
+    let nextIndex = 1;
+
+    function slide() {
+        slideTimeout = setTimeout(
+            function () {
+                if (nextIndex >= slidesCount) {
+                    nextIndex = 0;
+                }
+                slider.scrollItem(nextIndex++);
+            },
+            miliseconds
+        );
+    }
+
+    slider.ele.addEventListener('glider-animated', function () {
+        window.clearInterval(slideTimeout);
+        slide();
+    });
+
+    slide();
+}
 
   </script>
   <script src="/main.js"></script>
