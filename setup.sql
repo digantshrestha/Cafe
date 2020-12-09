@@ -99,12 +99,13 @@ create table map(
 );
 
 
-create table contact(
-    id serial primary key not null,
-    first_name varchar(15),
-    last_name varchar(15),
-    contact_no varchar(20) not null,
-    message text not null,
-    status boolean default 'false'
+create table orderDetails(
+	id serial primary key not null,
+	first_name varchar(20) not null,
+	last_name varchar(20) not null,
+	contact_no varchar(20),
+    address varchar(50),
+	status boolean not null,
+	time timestamp default current_timestamp
 );
 

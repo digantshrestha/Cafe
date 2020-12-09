@@ -1,0 +1,66 @@
+*{
+    margin: none;
+}
+
+.order-jumbo{
+    height:350px;
+    padding:0px;
+    background-image: url("images/CNCWM1.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    box-shadow:0px 5px 10px;
+}
+
+.order-opacity{
+    height:350px;
+    /* padding: 120px; */
+    background-color:rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: left;
+}
+
+.order-method-form{
+    margin-top:200px;
+}
+
+.order-method-form .btn{
+    background-color:#f4f4f4;
+    color:rgb(238, 116, 59);
+    font-weight: bold;
+    border:1px solid rgb(238, 116, 59);
+    border-radius: 0;
+}
+
+.order-method-form .btn:hover{
+    background-color:rgb(238, 116, 59);
+    color: #f4f4f4;
+    border:1px solid #f4f4f4;
+} 
+
+.proceed-btn{
+    background-color:#fff;
+    color:rgb(238, 116, 59);
+    font-weight: bold;
+    border:1px solid rgb(238, 116, 59);
+    border-radius: 0;
+}
+
+.proceed-btn:hover{
+    background-color:rgb(238, 116, 59);
+    color: #fff;
+    border:1px solid #fff;
+} 
+
+.form{
+    width:70%;
+    margin:auto;
+    margin-top:20px;
+    /* padding: 20px; */
+    /* border:1px solid rgb(196, 193, 193);  
+    border-radius: 10px; */
+}
+
+.card-header{
+    color: #6e6d6d;
+}
