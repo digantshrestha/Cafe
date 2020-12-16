@@ -105,7 +105,10 @@ create table orderDetails(
 	last_name varchar(20) not null,
 	contact_no varchar(20),
     address varchar(50),
-	status boolean not null,
-	time timestamp default current_timestamp
+    date varchar(10),
+    time varchar(10),
+    message text,
+	status boolean default 0,
+	date_time timestamp default current_timestamp
 );
 

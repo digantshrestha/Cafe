@@ -5,7 +5,7 @@
         private $db;
         private $query, $stmt, $items, $item;
         private $name, $price, $quantity, $imagePath, $imageName, $availableData;
-        private $fname, $lname, $phone, $msg;
+        private $first_name, $last_name, $contact_no, $address, $date, $time, $message;
 
         public function __construct(){}
 
@@ -54,19 +54,25 @@
             return $params;
         }
 
-        public function setMsgData($fname, $lname, $phone, $msg){
-            $this->fname = $fname;
-            $this->lname = $lname;
-            $this->phone = $phone;
-            $this->msg = $msg;
+        public function setOrderDetails($first_name, $last_name, $contact_no, $address, $date, $time, $message){
+            $this->first_name = $first_name;
+            $this->last_name = $last_name;
+            $this->contact_no = $contact_no;
+            $this->address = $address;
+            $this->date = $date;
+            $this->time = $time;
+            $this->message = $message;
         }
 
-        public function getMsgData(){
+        public function getOrderDetails(){
             $params = [
-                $this->fname,
-                $this->lname,
-                $this->phone,
-                $this->msg
+                $this->first_name,
+                $this->last_name,
+                $this->contact_no,
+                $this->address,
+                $this->date,
+                $this->time,
+                $this->message
             ];
             return $params;
         }
@@ -191,19 +197,25 @@
             // $stmt->execute([$data1, $data2, $data3, $id]);
         }
 
-        public function insertMsg(){
+        public function insertOrderDetails(){
             pg_prepare($this->connection(), 'crud-query', $this->getQuery());
-            pg_execute($this->connection(), 'crud-query', $this->getMsgData());
+            return pg_execute($this->connection(), 'crud-query', $this->getOrderDetails());
         }
 
-        public function getMsgs(){
-            $stmt = pg_query($this->connection(), $this->getQuery());
-            $result = pg_fetch_all($stmt);
+        // public function getOrder(){
+        //     $stmt = pg_query($this->connection(), $this->getQuery());
+        //     $result = pg_fetch_all($stmt);
+        //     return $result;
+        // }
+
+        public function getOrderCount(){
+            $stmt = pg_query($this->connection(), 'SELECT * FROM orderDetails');
+            $result = pg_num_rows($stmt);
             return $result;
         }
 
-        public function getMsgCount(){
-            $stmt = pg_query($this->connection(), 'SELECT * FROM contact');
+        public function getNewOrderCount(){
+            $stmt = pg_query($this->connection(), 'SELECT * FROM orderDetails WHERE status = false');
             $result = pg_num_rows($stmt);
             return $result;
         }

@@ -34,38 +34,43 @@
 <?php include_once("globalTemplates/socialMedia.php"); ?>
 
 <main class="container">
-    <form action="" class="card form order-info-form" method="POST">
+    <form action="mainIncludes/inc.orderDetails.php" class="card form order-info-form" method="POST">
             <div class="card-header">
                 <h3 class="form-header">Contact Details</h3>
             </div>
 
             <div class="card-body">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Name">
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last Name">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name">
                 </div>
 
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone Number">
+                    <input type="text" name="contact_no" class="form-control" placeholder="Phone Number">
                 </div>
 
                 <div class="form-group">
-                    <input type="address" class="form-control" placeholder="Address">
+                    <input type="address" name="address" class="form-control" placeholder="Address">
                 </div>
 
                 <div class="form-group row">
                     <span class="col-md-2 add-input-info">Date</span>
-                    <input type="date" class="form-control col-md-10">
+                    <input type="date" name="date" class="form-control col-md-10">
                 </div>
 
                 <div class="form-group row">
                     <span class="col-md-2 add-input-info">Time</span>
-                    <input type="Time" class="form-control col-md-10">
+                    <input type="Time" name="time" class="form-control col-md-10">
                 </div>
-                <input type="submit" class="btn btn-primary proceed-btn" value="Proceed">
+
+                <div class="form-group row">
+                    <textarea name="message" class="form-control" placeholder="Additional Message(If Any)"></textarea>
+                </div>
+
+                <input type="submit" name ="submit" class="btn btn-primary proceed-btn" value="Proceed">
             </div>
             
     </form>
